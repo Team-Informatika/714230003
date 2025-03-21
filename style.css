@@ -1,137 +1,97 @@
-/* Reset dasar */
-body, h1, h2, h3, p, ul, li, a, button, input, textarea {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #fce4ec;
+    color: #880e4f;
 }
 
-body {
-    scroll-behavior: smooth;
-}
-
-/* Navbar */
 .navbar {
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #f8bbd0;
+    padding: 15px;
+    text-align: center;
 }
 
-.logo {
+.navbar .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #4a90e2;
+    color: #880e4f;
     text-decoration: none;
 }
 
 .nav-links {
     list-style: none;
-    display: flex;
-    gap: 15px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
+    color: #880e4f;
+    font-weight: bold;
 }
 
-.nav-links a:hover {
-    color: #4a90e2;
-}
-
-/* Hero Section */
 .hero {
-    background: linear-gradient(120deg, #4a90e2, #7b4397);
-    color: white;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #fce4ec;
     text-align: center;
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    background: white;
-    color: #4a90e2;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background: #e0e0e0;
-}
-
-/* Sections */
-.section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.bg-light {
-    background: #f4f4f4;
-}
-
-/* Portfolio */
-.portfolio-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.portfolio-item {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    width: 250px;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
-}
-
-/* Formulir Kontak */
-.input-field {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    color: #880e4f;
 }
 
 .btn {
     display: inline-block;
-    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f8bbd0;
+    color: #880e4f;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-/* Footer */
-.footer {
-    background: #333;
-    color: white;
+.section {
+    padding: 50px 20px;
     text-align: center;
+}
+
+.bg-light {
+    background-color: #f8bbd0;
+}
+
+.portfolio-item {
+    background-color: #fce4ec;
     padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.about-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-image img {
+    width: 200px; /* Sesuaikan ukuran foto */
+    height: auto;
+    border-radius: 50%; /* Membuat foto menjadi bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-links a {
+    color: #880e4f;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer {
+    background-color: #f8bbd0;
+    text-align: center;
+    padding: 10px;
 }
